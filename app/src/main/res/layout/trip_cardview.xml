@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F4EEEE"
+    android:layout_height="310dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:backgroundTint="@color/white"
+        android:id="@+id/cardViewTrip"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="60dp">
+
+           <TextView
+               android:id="@+id/cardTripName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="5dp"
+               android:text="Kedarnath"
+               android:textColor="@color/blue"
+               android:textSize="20sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/cardOrganizerName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/cardTripName"
+               android:layout_marginLeft="20dp"
+               android:text="Aarambh adventure"
+               android:textColor="@color/black"
+               android:textSize="20sp" />
+
+       </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="60dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cardTripImage"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="240dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTripDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/button_layout"
+                android:text="Delete"
+                android:layout_marginLeft="15dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTripUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/button_layout"
+                android:text="Update"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTripView"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_layout"
+                android:text="View"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
